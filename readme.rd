@@ -1,2 +1,1 @@
-sql
-
+简单的使用maven创建springmvc mybatis整合，有sql。使用mybatis逆向工程生成mapper mapper.xml文件
