@@ -9,7 +9,14 @@ import java.util.List;
  * Created by liuhb on 2017/2/13.
  */
 public interface UserService {
-    public User getUserById(long userid);
+    User getUserById(long userid);
 
-    public List<User> queryUserByName(UserExample userExample);
+    List<User> queryUserByName(UserExample userExample);
+
+    int editUser(User user);
+
+    int deleteUserById(long userId);
+
+    int addUser(User user);
+
 }

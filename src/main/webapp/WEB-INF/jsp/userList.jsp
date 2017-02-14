@@ -36,6 +36,7 @@
                 <td>${user.email }</td>
                 <td>${user.created }</td>
                 <td>${user.updated }</td>
+                <td><a href="/rest/editUserPage/${user.id}">修改页面</a></td>
             </tr>
         </c:forEach>
     </table>

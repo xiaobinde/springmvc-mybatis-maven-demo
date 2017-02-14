@@ -30,4 +30,18 @@ public class UserServiceImpl implements UserService {
         return list;
     }
 
+    @Override
+    public int editUser(User user) {
+        return userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public int deleteUserById(long userId) {
+        return userMapper.deleteByPrimaryKey(userId);
+    }
+
+    @Override
+    public int addUser(User user) {
+        return userMapper.insert(user);
+    }
 }
